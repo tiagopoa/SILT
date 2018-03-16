@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8" />
+  	<meta name="description" content="SILT - Sistema de Identificação e Localização de Tiroteios" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+    <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+       body {background-color: black}
+    </style>
+
+  </head>
+  <body>
+
+  	<div class="row-fluid">
+  			
+  			<div class="span12 cor2"><h3>SILT - Sistema de Identificação e Localização de Tiroteios</h3></div>
+<!--  			<div class="span4 cor2"><h3>Sidebar</h3></div>-->
+  	</div>
+
+  	<div class="row-fluid">
+  		<div class="btn-group btn-group-justified">
+		  <a href="#" class="btn btn-primary">Relatórios</a>
+		  <a href="#" class="btn btn-primary">Meus Dados</a>
+  		  <a href="#" class="btn btn-primary">Configurações</a>
+		</div>
+
+  	</div>
+
+
+  	<div class="row">  					
+				<div class="span8 cor2">
+						<title>SILT - Sistema de Identificação e Localização de Tiroteios</title>
+
+					<!-- INICIO GOOGLOE MAPS -->
+    				<h3>My Google Maps Demo</h3>
+    				<div id="map"></div>
+    				<script>
+    				  function initMap() {
+    				    var uluru = {lat: -25.363, lng: 131.044};
+    				    var map = new google.maps.Map(document.getElementById('map'), {
+    				      zoom: 4,
+    				      center: uluru
+    				    });
+    				    var marker = new google.maps.Marker({
+    				      position: uluru,
+    				      map: map
+    				    });
+    				  }
+    				</script>
+    				<script async defer
+    				src="https://maps.googleapis.com/maps/api/				js?key=AIzaSyAifS9CFk1pbp5YIbv2NAQexZC9K55yarU&callback=initMap">
+    				</script>
+    				<!-- FIM GOOGLO MAPS -->
+				</div>	
+
+				<div class="span4 cor2">
+					<h3>Sidebar</h3>
+				</div>
+	</div>
+
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+
+  </body>
+</html>
