@@ -19,53 +19,65 @@
   </head>
   <body>
 
-  	<div class="row-fluid">
-  			
-  			<div class="span12 cor2"><h3>SILT - Sistema de Identificação e Localização de Tiroteios</h3></div>
-<!--  			<div class="span4 cor2"><h3>Sidebar</h3></div>-->
+<div class="container-fluid">
+  	<div class="row-fluid">  			
+  			<div class="span2 cor2">
+  				<img src="proximity-150698_960_720.png" alt="" width="60">  		
+  			</div>
+  			<div class="span10 cor2">
+  				<h3>SILT - Sistema de Identificação e Localização de Tiroteios</h3>
+  			</div>
   	</div>
+ </div>
 
+<div class="container-fluid">
   	<div class="row-fluid">
-  		<div class="btn-group btn-group-justified">
-		  <a href="#" class="btn btn-primary">Relatórios</a>
-		  <a href="#" class="btn btn-primary">Meus Dados</a>
-  		  <a href="#" class="btn btn-primary">Configurações</a>
+  		<div class="span4"></div>
+  		<div class="span4">
+  				<div class="btn-group btn-group-justified">
+				  <a href="#" class="btn btn-primary">Relatórios</a>
+				  <a href="#" class="btn btn-primary">Meus Dados</a>
+  				  <a href="#" class="btn btn-primary">Configurações</a>
+				</div>
 		</div>
+		<div class="span4"></div>
 
   	</div>
+  	</div>
 
-
-  	<div class="row">  					
+<div class="container-fluid">
+  	<div class="row-fluid">  					
 				<div class="span8 cor2">
 						<title>SILT - Sistema de Identificação e Localização de Tiroteios</title>
 
 					<!-- INICIO GOOGLOE MAPS -->
-    				<h3>My Google Maps Demo</h3>
-    				<div id="map"></div>
-    				<script>
-    				  function initMap() {
-    				    var uluru = {lat: -25.363, lng: 131.044};
-    				    var map = new google.maps.Map(document.getElementById('map'), {
-    				      zoom: 4,
-    				      center: uluru
-    				    });
-    				    var marker = new google.maps.Marker({
-    				      position: uluru,
-    				      map: map
-    				    });
-    				  }
-    				</script>
-    				<script async defer
-    				src="https://maps.googleapis.com/maps/api/				js?key=AIzaSyAifS9CFk1pbp5YIbv2NAQexZC9K55yarU&callback=initMap">
-    				</script>
+    				<h3></h3>
+    				 <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -30.0352886, lng: -51.2267094};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAifS9CFk1pbp5YIbv2NAQexZC9K55yarU&callback=initMap">
+    </script>    				
     				<!-- FIM GOOGLO MAPS -->
 				</div>	
 
 				<div class="span4 cor2">
 					<h3>Sidebar</h3>
+					<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
 				</div>
 	</div>
-
+</div>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 
   </body>
